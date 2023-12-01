@@ -1,0 +1,31 @@
+# OS generated files #
+.DS_Store
+.DS_Store?
+*._*
+
+# Build and dists #
+build/
+dist/
+wsknn.egg-info/
+
+# Created by https://www.gitignore.io/api/pydev,python,pycharm,sublimetext,jupyternotebook,visualstudiocode
+
+### JupyterNotebook ###
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Pycharm
+*.idea*
+
+# .env
+.env
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+src/__pycache__/__init__.cpython-310.pyc
+*__pycache__*
+venv

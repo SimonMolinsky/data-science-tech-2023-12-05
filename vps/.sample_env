@@ -1,0 +1,5 @@
+ACCESS_TOKEN=<token>
+MODEL_DIR=<directory where model is stored>
+LOGGING_DIR=<directory where logs are created>
+LOGGING_LEVEL=<logging mode>
+LOGGING_FORMAT="[%(asctime)s, %(levelname)s] %(message)s"
