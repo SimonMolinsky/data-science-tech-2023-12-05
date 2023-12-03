@@ -49,4 +49,10 @@ sudo apt install git
 13. Transfer modelu do katalogu `models` (może być przez GitHub).
 14. Napisanie programu w `FastAPI` albo `Flask` do serwowania modelu (zobacz kod w katalogu `vps`).
 15. Zabezpieczenie przed nieautoryzowanym dostępem (przykładowo customowy token).
-16. Uruchomienie aplikacji, dodanie `uvicorn` w celu obsługi API.
+16. Dodanie `uvicorn` w celu obsługi zapytań do API.
+17. Ustawienie wersji paczek i wersji Pythona (fixed).
+18. Testy aplikacji lokalnie.
+19. Wysłanie aplikacji na serwer.
+20. Uzupełnienie zmiennych środowiskowych na serwerze.
+21. Przygotowanie katalogu na logi.
+22. 
