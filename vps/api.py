@@ -23,6 +23,19 @@ LOGGING_DIR = os.getenv("LOGGING_DIR")
 LOGGING_LEVEL = os.getenv("LOGGING_LEVEL")
 LOGGING_FORMAT = os.getenv("LOGGING_FORMAT")
 
+logger = logging.getLogger(__name__)
+logger.setLevel(LOGGING_LEVEL)
+
+fh = logging.FileHandler(LOGGING_DIR)
+fh.setLevel(LOGGING_LEVEL)
+formatter = logging.Formatter(
+    LOGGING_FORMAT
+)
+fh.setFormatter(formatter)
+logger.addHandler(fh)
+
+logger.info('API is starting up')
+
 
 app = FastAPI(docs_url=None, redoc_url=None)
 origins = ["*"]
@@ -39,13 +52,13 @@ api_key_header = APIKeyHeader(name=ACCESS_TOKEN_HEADER_NAME)
 
 @app.post("/predict", response_model=ResponseModel, status_code=200)
 async def detector(item: RequestModel, token: str = Depends(api_key_header)):
-    logging.info("New request coming!")
+    logger.info("New request coming!")
     if token != ACCESS_TOKEN:
         return {"error": "Invalid Access Token"}
     else:
         # unpack and use model
         predictions = predict(model_path=os.getenv("MODEL_DIR"), data=item.ds)
-        logging.info("Predictions made successfully!")
+        logger.info("Predictions made successfully!")
         return ResponseModel(anomalies=predictions)
 
 
