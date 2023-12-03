@@ -49,12 +49,12 @@ sudo apt install git
 13. Transfer modelu do katalogu `models` (może być przez GitHub).
 14. Napisanie programu w `FastAPI` albo `Flask` do serwowania modelu (zobacz kod w katalogu `vps`).
 15. Zabezpieczenie przed nieautoryzowanym dostępem (przykładowo customowy token).
-16. Dodanie `uvicorn` w celu obsługi zapytań do API.
-17. Ustawienie wersji paczek i wersji Pythona.
-18. Testy aplikacji lokalnie.
-19. Wysłanie aplikacji na serwer.
-20. Stworzenie wirtualnego środowiska z `requirements.txt`.
-21. Uzupełnienie zmiennych środowiskowych na serwerze w pliku `.env`.
+16. Ustawienie wersji paczek i wersji Pythona.
+17. Testy aplikacji lokalnie.
+18. Wysłanie aplikacji na serwer.
+19. Stworzenie wirtualnego środowiska z `requirements.txt`.
+20. Uzupełnienie zmiennych środowiskowych na serwerze w pliku `.env`. 
+21. Dodanie `gunicorn` do środowiska produkcyjnego w celu obsługi zapytań do API.
 22. 
 
 # Dodatkowe rady
