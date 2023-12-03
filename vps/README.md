@@ -18,7 +18,7 @@ usermod -aG sudo myapp
 
 5. (Opcjonalnie) Konfiguracja SSH do łączenia się z serwerem.
 6. (Opcjonalnie) Instalacja Pythona, jeśli nie jest zainstalowany.
-7. (Opcjonalnie) Instalacha `pip` jeśli nie jest zainstalowany, przykładowo w systemie Ubuntu **22.04**:
+7. (Opcjonalnie) Instalacja `pip` jeśli nie jest zainstalowany, przykładowo w systemie Ubuntu **22.04**:
 
 ```shell
 sudo apt install pip -y
@@ -53,6 +53,11 @@ sudo apt install git
 17. Ustawienie wersji paczek i wersji Pythona (fixed).
 18. Testy aplikacji lokalnie.
 19. Wysłanie aplikacji na serwer.
-20. Uzupełnienie zmiennych środowiskowych na serwerze.
-21. Przygotowanie katalogu na logi.
-22. 
+20. Stworzenie wirtualnego środowiska z `requirements.txt`.
+21. Uzupełnienie zmiennych środowiskowych na serwerze w pliku `.env`.
+
+
+# Dodatkowe rady
+
+- zawsze uzupełniaj i aktualizuj `README.md` opisując jak instalować paczkę, jak wygląda wejście i jak wygląda wyjście API
+- 

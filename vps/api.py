@@ -15,6 +15,7 @@ from api_functions.response import ResponseModel
 
 load_dotenv()
 ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
+ACCESS_TOKEN_HEADER_NAME = os.getenv("ACCESS_TOKEN_HEADER_NAME")
 MODEL_DIR = os.getenv("MODEL_DIR")
 
 # Set logging
@@ -33,7 +34,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-api_key_header = APIKeyHeader(name="CustomAccessToken")
+api_key_header = APIKeyHeader(name=ACCESS_TOKEN_HEADER_NAME)
 
 
 @app.post("/predict", response_model=ResponseModel, status_code=200)

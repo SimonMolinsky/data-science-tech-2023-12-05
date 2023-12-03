@@ -1,4 +1,5 @@
 ACCESS_TOKEN=<token>
+ACCESS_TOKEN_HEADER_NAME=<token header name>
 MODEL_DIR=<directory where model is stored>
 LOGGING_DIR=<directory where logs are created>
 LOGGING_LEVEL=<logging mode>
