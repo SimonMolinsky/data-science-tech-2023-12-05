@@ -1,0 +1,2 @@
+gcloud functions delete get-forecasts --gen2 --region {region where get-forecasts function was deployed}
+gcloud scheduler jobs delete get-forecasts-scheduler --location {region where get-forecasts-scheduler is set}

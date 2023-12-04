@@ -1,0 +1,6 @@
+functions-framework
+google-cloud-error-reporting
+google-cloud-bigquery
+google-cloud-storage
+requests
+python-dotenv
