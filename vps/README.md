@@ -45,7 +45,7 @@ sudo apt install git
   - `/logs/` - tutaj zbieramy logi z serwera
   - `/venvs/` - tutaj są środowiska wirtualne
 
-12. Stworzenie modelu i zapisanie go w formacie `pickle` albo (preferowany) `joblib`.
+12. Stworzenie modelu i zapisanie jego wytrenowanej wersji.
 13. Transfer modelu do katalogu `models` (może być przez GitHub).
 14. Napisanie programu w `FastAPI` albo `Flask` do serwowania modelu (zobacz kod w katalogu `vps`).
 15. Zabezpieczenie przed nieautoryzowanym dostępem (przykładowo customowy token).
